@@ -18,7 +18,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install jupyer
+        pip install jupyter
     - name: Convert notebook to basic html
       run: jupyter nbconvert playing-word-embeddings.ipynb --to html --template basic
     - name: Commit the output html
