@@ -4,6 +4,7 @@ on:
   push:
     paths:
         - '*.ipynb'   
+        - '*.yml'
 
 jobs:
   build:
@@ -25,6 +26,6 @@ jobs:
       run: |
         git config --global user.email "guillem.orellana@gmail.com"
         git config --global user.name "Guillem96"
-        git add playing-word-embeddings.ipynb
+        git add playing-word-embeddings.html
         git commit -m "Auto commit: HTML build"
         git push origin master
